@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class RNGaidPackage implements ReactPackage {
-  
+
     public RNGaidPackage(){
     }
 
@@ -21,11 +21,6 @@ public class RNGaidPackage implements ReactPackage {
 
         modules.add(new RNGaidModule(reactContext));
         return modules;
-    }
-
-    // Deprecated RN 0.47 (based on neruchev pull request on main repo)
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
     }
 
     @Override
